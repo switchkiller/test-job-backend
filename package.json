@@ -1,0 +1,23 @@
+{
+  "name": "@barun/test-lerna-cdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "watch": "lerna run watch --stream",
+    "test": "lerna run test --",
+    "cdk": "yarn --cwd packages/infrastructure cdk",
+    "deploy": "yarn build && yarn cdk synth && yarn cdk deploy --require-approval never"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
