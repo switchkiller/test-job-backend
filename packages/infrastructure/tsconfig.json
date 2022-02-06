@@ -25,7 +25,6 @@
     "types": [
       "node"
     ],
-    "outDir": "dist/",
     "esModuleInterop": true,
   },
   "exclude": [

@@ -9,7 +9,7 @@ export interface ApolloBasedServiceProps {
     readonly serviceName: string;
 }
 
-export class ApolloBasedService extends Construct {
+export class ApolloBasedService extends core.Stack {
     readonly graphQLApiEndpoint: string;
 
     constructor(scope: Construct, id: string, props: ApolloBasedServiceProps) { 

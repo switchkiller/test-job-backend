@@ -1,5 +1,5 @@
 {
-  "name": "@barun/infrastructure",
+  "name": "@barun/infrastructure-test",
   "version": "0.1.0",
   "bin": {
     "infrastructure": "bin/infrastructure.js"
